@@ -49,5 +49,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyAttribute\MyAttribute.csproj">
+      <Project>{a5566f97-65f8-4dda-8db6-2622e0e9de9c}</Project>
+      <Name>MyAttribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyLibrary\MyLibrary.csproj">
+      <Project>{4ad4ce59-f8a9-4539-886b-9086d52c5279}</Project>
+      <Name>MyLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
