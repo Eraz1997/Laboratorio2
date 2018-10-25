@@ -24,5 +24,27 @@ namespace MyLibrary
         {
             Console.WriteLine("M3 s1={0} s2={1}", s1, s2);
         }
+
+        [ExecuteMe("hello", "42")]
+        public void M4(string s1, int s2)
+        {
+            Console.WriteLine("M4 s1={0} s2={1}", s1, s2);
+        }
+    }
+
+    public class Bar
+    {
+        private int n;
+        public Bar(int nano)
+        {
+            n = nano;
+        }
+
+        [ExecuteMe("sanni")]
+        public void M1(string m)
+        {
+            Console.WriteLine(m);
+            Console.ReadLine();
+        }
     }
 }
